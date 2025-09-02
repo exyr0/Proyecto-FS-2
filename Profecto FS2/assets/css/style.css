@@ -3,3 +3,30 @@
     text-align: end;
     justify-content: end;
 }
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.text-footer{
+    opacity: 35%;
+}
+
+#p-section{
+    text-align: center;
+}
+
+#registrarse{
+    padding-top: 37%;
+    padding-bottom: 37%;
+}
+aside{
+    text-align: center;
+}
