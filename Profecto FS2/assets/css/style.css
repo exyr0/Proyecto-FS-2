@@ -42,9 +42,19 @@ aside{
 }
 
 #container-cards{
-    height: 780px;
+    padding-bottom: 25px;
 }
 
 .card{
+    text-align: left;
+}
+
+#div-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-price{
+    font-size: 1.1rem;
     text-align: right;
 }
