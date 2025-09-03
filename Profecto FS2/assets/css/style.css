@@ -1,24 +1,24 @@
-.nav-bar{
-    display: flex;
-    text-align: end;
-    justify-content: end;
-}
-
-
-footer{
-    width: 100%;
+#info-foot{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
     flex-direction: column;
-    padding-top: 5px;
-    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+    
 }
 .text-footer{
-    opacity: 35%;
+    opacity: 60%;
 }
-
+#carrito{
+    color: black;
+}
 
 #btn-reg{
     margin-bottom: 25px;
