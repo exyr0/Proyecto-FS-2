@@ -19,18 +19,25 @@ footer{
     opacity: 35%;
 }
 
-#p-section{
-    text-align: center;
+.inp-reg{
+    width: 300px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
-#registrarse{
-    height: 780px;
+#section-reg{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 780px;
 }
-aside{
-    text-align: center;
+#div-reg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 450px;
 }
 
 #section-in{
