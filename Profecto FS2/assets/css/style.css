@@ -24,9 +24,19 @@ footer{
 }
 
 #registrarse{
-    padding-top: 37%;
-    padding-bottom: 37%;
+    height: 780px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 aside{
     text-align: center;
+}
+
+#section-in{
+    text-align: center;
+    height: 780px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
