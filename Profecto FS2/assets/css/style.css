@@ -4,6 +4,7 @@
     justify-content: end;
 }
 
+
 footer{
     width: 100%;
     display: flex;
@@ -14,29 +15,70 @@ footer{
     padding-top: 5px;
     padding-bottom: 10px;
 }
-
 .text-footer{
     opacity: 35%;
 }
 
-#p-section{
-    text-align: center;
-}
 
-#registrarse{
-    height: 780px;
+#btn-reg{
+    margin-bottom: 25px;
+}
+#select{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+#p-reg{
+    margin-top: 15px;
+}
+.inp-reg{
+    width: 300px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#section-reg{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 780px;
 }
-aside{
-    text-align: center;
+#div-reg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 450px;
+    background-color: beige;
 }
 
+#titulo-in{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#p-in{
+    margin-top: 15px;
+}
+#btn-in{
+    margin-bottom: 15px;
+}
+.inp-in{
+    width: 300px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
 #section-in{
-    text-align: center;
-    height: 780px;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 660px;
+}
+#div-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 450px;
+    background-color: beige;
 }

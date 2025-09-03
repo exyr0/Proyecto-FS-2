@@ -31,32 +31,44 @@
             </ul>
         </div>
     </nav>
-    <div class="container">
-        <div class="row" id="registrarse">
-            <section class="col">
-                <p id="p-section">Te invitamos a registrarte y recibir beneficios exclusivos, y promociones personalizadas a tus compras, no te pierdas la oportunidad de elevar tu estilo</p>
-            </section>
-            <aside class="col">
-                <input type="text"  placeholder="Nombre">
-                <input type="text" placeholder="Apellido">
-                <input type="email" placeholder="Correo">
-                <input type="password" placeholder="Contraseña">
-                <button>Registrarse</button>
-            </aside>
+    <section id="section-reg">
+        <div id="div-reg">
+            <p id="p-reg">Registro de usuario</p>
+            <input class="inp-reg" type="text" placeholder="Nombre Completo">
+            <input class="inp-reg" type="email" placeholder="Correo">
+            <input class="inp-reg" type="email" placeholder="Confirma Correo">
+            <input class="inp-reg" type="password" placeholder="Contraseña">
+            <input class="inp-reg" type="password" placeholder="Confirma Contraseña">
+            <input class="inp-reg" type="tel" placeholder="Telefono">
+            <div id="select">
+                <select name="region" id="region">
+                    <option value="">-seleccione region</option>
+                    <option value="">Metropolitana</option>
+                    <option value="">bio bio</option>
+                    <option value="">araucania</option>
+                </select>
+                <select name="comuna" id="comuna">
+                    <option value="">-seleccione comuna</option>
+                    <option value="">la florida</option>
+                    <option value="">santiago</option>
+                    <option value="">linares</option>
+                </select>
+            </div>
+            <button id="btn-reg">Registrarse</button>
         </div>
-    </div>
-        <footer class="bg-light">
-            <h5 class="text-footer">2025</h5>
-            <h5 class="text-footer">contacto: correo@duoc.com</h5>
-            <h5 class="text-footer">instagram: @cuenta</h5>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-            crossorigin="anonymous"></script>
-        <script src="./assets/js/script.js"></script>
+    </section>
+    <footer class="bg-light">
+        <h5 class="text-footer">2025</h5>
+        <h5 class="text-footer">contacto: correo@duoc.com</h5>
+        <h5 class="text-footer">instagram: @cuenta</h5>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
