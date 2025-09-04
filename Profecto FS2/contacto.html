@@ -49,9 +49,13 @@
     <section id="section-msg">
         <div id="div-msg">
             <p id="p-reg"><b>Formulario de contactos</b></p>
-            <input class="inp-msg" type="text" placeholder="Nombre Completo">
-            <input class="inp-msg" type="email" placeholder="Correo">
-            <textarea class="inp-msg" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje"></textarea>
+            <input class="inp-msg" type="text" placeholder="Nombre Completo" id="inp_name" onkeyup="checkChar(document.getElementById('inp_name').value, 100, 1, 'nameError', 'Ingrese su nombre *obligatorio*', 'Ingrese un nombre con menos de 100 caracteres')">
+            <p class="text-danger" id="nameError"></p>
+            <input class="inp-msg" type="email" placeholder="Correo" id="inp_email" onkeyup="checkEmail(document.getElementById('inp_email').value); checkChar(document.getElementById('inp_email').value, 100, 1, 'emailError', 'Ingrese su correo *obligatorio*', 'Ingrese un correo con menos de 100 caracteres');">
+            <p class="text-danger" id="emailError"></p>
+            <p class="text-danger" id="domainError"></p>
+            <textarea class="inp-msg" id="inp_msg" rows="3" placeholder="Mensaje" onkeyup="checkChar(document.getElementById('inp_msg').value, 500, 1, 'msgError', 'Ingrese un mensaje *obligatorio*', 'Has alcanzado el limite de caracteres (500)')"></textarea>
+            <p class="text-danger" id="msgError"></p>
 
             <button id="btn-reg">Enviar Mensaje</button>
         </div>
