@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>SneakerVibe</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">SneakerVibe</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./ingresar.html">Ingresar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./registrarse.html">Registrarse</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" id="carrito" href="./registrarse.html"
+              >🛒 Carrito</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-producto mt-5" id="container-producto">
+      <div class="row d-flex justify-content-center" id="div-producto">
+        <div class="col-md-6 d-flex justify-content-center">
+          <img
+            src="./assets/img/Zapatiila_campus_00s.png"
+            class="img-producto"
+            alt="adidas campus 00s"
+          />
+        </div>
+        <div class="col-md-6" id="text-producto">
+          <div class="compra-productos">
+            <h2>Adidas Campus 00s</h2>
+            <p>
+              Zapatilla Campus 00s de gamuza, color negro con detalles en
+              blanco.
+            </p>
+            <h3>$89.990</h3>
+            <div class="size-table mt-3">
+              <h4>Tabla de Tallas</h4>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>US</th>
+                    <th>UK</th>
+                    <th>EU</th>
+                    <th>CM</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>5.5</td>
+                    <td>4.5</td>
+                    <td>38</td>
+                    <td>23.5</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>38.5</td>
+                    <td>24</td>
+                  </tr>
+                  <tr>
+                    <td>6.5</td>
+                    <td>5.5</td>
+                    <td>39</td>
+                    <td>24.5</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>40</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td>7.5</td>
+                    <td>6.5</td>
+                    <td>40.5</td>
+                    <td>25.5</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="content">
+                <button class="btn btn-primary" id="btn-carrito">
+                  Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-recomendados" id="container-recomendados">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+        <div class="col-12 col-md-4">
+          <a
+            href="./nike.html"
+            class="card-as-button"
+            style="text-decoration: none; color: inherit; display: block"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="./assets/img/tn_blanca.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Nike TN Air Max Plus</h5>
+                <p class="card-text">Zapatilla de hombre originales</p>
+                <div class="button-price-container">
+                  <span class="card-price">$185.990</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-4">
+          <a
+            href="#"
+            class="card-as-button"
+            style="text-decoration: none; color: inherit; display: block"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="./assets/img/Zapatillas_Campus_00s_Blanco_JP9998_db01_00_standard.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Zapatilla campus 00s</h5>
+                <p class="card-text">Zapatilla de hombre originales</p>
+                <div class="button-price-container">
+                  <span class="card-price">$89.990</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-4">
+          <a
+            href="#"
+            class="card-as-button"
+            style="text-decoration: none; color: inherit; display: block"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="./assets/img/Zapatillas_Campus_00s_Negro_JH8997_01_standard.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Zapatilla campus 00s</h5>
+                <p class="card-text">Zapatilla de hombre originales</p>
+                <div class="button-price-container">
+                  <span class="card-price">$89.990</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-light">
+      <div id="info-foot">
+        <p class="text-footer">© 2025</p>
+        <p class="text-footer">📧 Contacto: SneakerVibe@gmail.com</p>
+        <p class="text-footer">📷 Instagram: @SneakerVibe</p>
+      </div>
+      <div>
+        <input type="email" placeholder="Correo" /><button>Suscribirse</button>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
