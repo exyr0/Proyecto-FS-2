@@ -171,7 +171,6 @@ footer{
     border-radius: 5px;
 }
 
-
 #btn-carrito{
     margin: 0 auto;
     display: block;
@@ -192,3 +191,25 @@ footer{
 .card-title-categoria{
     text-align: center;
 }
+
+#altura{
+    height: 690px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+}
+
+#img-logo{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
