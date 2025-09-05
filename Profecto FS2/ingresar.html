@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
-
     <title>Document</title>
 </head>
 
@@ -40,20 +39,15 @@
             </ul>
         </div>
     </nav>
-    <img src="./assets/img/ChatGPT Image 3 sept 2025, 18_45_51.png" id="img-logo" alt="">
-    <h2 id="titulo-in">SneakerVibe</h2>
+    <h2 id="titulo-in">MaFeDa</h2>
     <section id="section-in">
         <div id="div-in">
             <p id="p-in">Inicio de Sesion</p>
-            <input class="inp-in" type="email" placeholder="Correo" id="inp_email" onkeyup="checkEmail(document.getElementById('inp_email').value); checkChar(document.getElementById('inp_email').value, 100, 5, 'emailError', 'Ingrese un email con mas de 5 caracteres', 'Ingrese un email con menos de 100 caracteres');">
-            <p class="text-danger" id="emailError"></p>
-            <p class="text-danger" id="domainError"></p>
-            <input class="inp-in" type="password" placeholder="Contraseña" id="inp_passw" onkeyup="checkChar(document.getElementById('inp_passw').value, 10, 4, 'passwError', 'Ingrese una contraseña de mas de 4 caracteres', 'Ingrese una contraseña con menos de 10 caracteres')">
-            <p class="text-danger" id="passwError"></p>
-            <button onclick="enviarForm(document.getElementById('inp_email').value, 'emailError', 'Ingrese un email *obligatorio*'); enviarForm(document.getElementById('inp_passw').value, 'passwError', 'Ingrese una contraseña *obligatorio*')" id="btn-in">Iniciar Sesion</button>
+            <input class="inp-in" type="email" placeholder="Correo">
+            <input class="inp-in" type="password" placeholder="Contraseña">
+            <button id="btn-in">Iniciar Sesion</button>
         </div>
     </section>
-
     <footer class="bg-light">
         <div id="info-foot">
             <p class="text-footer">© 2025</p>
@@ -72,5 +66,4 @@
         crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
 </body>
-
 </html>
