@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,81 +8,6 @@
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
 
-    <title>Document</title>
-</head>
-
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">SneakerVibe</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./productos.html">Productos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./registrarse.html">Registrarse</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" id="carrito" href="./registrarse.html">🛒 Carrito</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- Body -->
-    <h2 id="titulo-in">MaFeDa</h2>
-    <section id="section-in">
-        <div id="div-in">
-            <p id="p-in">Inicio de Sesion</p>
-            <input class="inp-in" type="email" placeholder="Correo" id="inp_email" onkeyup="checkEmail(document.getElementById('inp_email').value); checkChar(document.getElementById('inp_email').value, 100, 5, 'emailError', 'Ingrese un email con mas de 5 caracteres', 'Ingrese un email con menos de 100 caracteres');">
-            <p class="text-danger" id="emailError"></p>
-            <p class="text-danger" id="domainError"></p>
-            <input class="inp-in" type="password" placeholder="Contraseña" id="inp_passw" onkeyup="checkChar(document.getElementById('inp_passw').value, 10, 4, 'passwError', 'Ingrese una contraseña de mas de 4 caracteres', 'Ingrese una contraseña con menos de 10 caracteres')">
-            <p class="text-danger" id="passwError"></p>
-            <button onclick="enviarForm(document.getElementById('inp_email').value, 'emailError', 'Ingrese un email *obligatorio*'); enviarForm(document.getElementById('inp_passw').value, 'passwError', 'Ingrese una contraseña *obligatorio*')" id="btn-in">Iniciar Sesion</button>
-        </div>
-    </section>
-    <footer class="bg-light">
-        <div id="info-foot">
-            <p class="text-footer">© 2025</p>
-            <p class="text-footer">📧 Contacto: SneakerVibe@gmail.com</p>
-            <p class="text-footer">📷 Instagram: @SneakerVibe</p>
-        </div>
-        <div>
-            <input type="email" placeholder="Correo"><button>Suscribirse</button>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-        crossorigin="anonymous"></script>
-    <script src="./assets/js/script.js"></script>
-</body>
-
-=======
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
 </head>
 
@@ -121,11 +45,15 @@
     <section id="section-in">
         <div id="div-in">
             <p id="p-in">Inicio de Sesion</p>
-            <input class="inp-in" type="email" placeholder="Correo">
-            <input class="inp-in" type="password" placeholder="Contraseña">
-            <button id="btn-in">Iniciar Sesion</button>
+            <input class="inp-in" type="email" placeholder="Correo" id="inp_email" onkeyup="checkEmail(document.getElementById('inp_email').value); checkChar(document.getElementById('inp_email').value, 100, 5, 'emailError', 'Ingrese un email con mas de 5 caracteres', 'Ingrese un email con menos de 100 caracteres');">
+            <p class="text-danger" id="emailError"></p>
+            <p class="text-danger" id="domainError"></p>
+            <input class="inp-in" type="password" placeholder="Contraseña" id="inp_passw" onkeyup="checkChar(document.getElementById('inp_passw').value, 10, 4, 'passwError', 'Ingrese una contraseña de mas de 4 caracteres', 'Ingrese una contraseña con menos de 10 caracteres')">
+            <p class="text-danger" id="passwError"></p>
+            <button onclick="enviarForm(document.getElementById('inp_email').value, 'emailError', 'Ingrese un email *obligatorio*'); enviarForm(document.getElementById('inp_passw').value, 'passwError', 'Ingrese una contraseña *obligatorio*')" id="btn-in">Iniciar Sesion</button>
         </div>
     </section>
+
     <footer class="bg-light">
         <div id="info-foot">
             <p class="text-footer">© 2025</p>
@@ -145,5 +73,4 @@
     <script src="./assets/js/script.js"></script>
 </body>
 
->>>>>>> dad1d4b5e615128ac9f0414a0aef6bf6ea59b5f7
 </html>

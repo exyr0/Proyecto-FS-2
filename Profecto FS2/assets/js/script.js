@@ -29,6 +29,22 @@ function checkEmail(email) {
     }
 }
 
+function emailConfirm(email, confEmail, elementId){
+    if(email == confEmail){
+        document.getElementById(elementId).innerHTML = "";
+    }else{
+        document.getElementById(elementId).innerHTML = "Los correos especificados no coinciden.";
+    }
+}
+
+function passwConfirm(pass, confPass, elementId){
+    if(pass == confPass){
+        document.getElementById(elementId).innerHTML = "";
+    }else{
+        document.getElementById(elementId).innerHTML = "Las contraseñas especificadas no coinciden.";
+    }
+}
+
 function enviarForm(text, elementId, errorMsg){
     if(text.length < 1){
         document.getElementById(elementId).innerHTML = errorMsg;
