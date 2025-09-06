@@ -222,3 +222,23 @@
 #img-ingresar{
     width: 380px;
 }
+
+.blog-card {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.blog-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.blog-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
