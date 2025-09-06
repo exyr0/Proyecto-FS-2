@@ -46,6 +46,7 @@ footer{
 }
 #section-reg{
     display: flex;
+    margin:30px;
     justify-content: center;
     align-items: center;
     height: 780px;
@@ -101,7 +102,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 660px;
+    height: 400px;
 }
 
 #container-cards{
