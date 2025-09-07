@@ -14,7 +14,7 @@
     <link href="./assets/img/favicon.ico" rel="icon" type="image/x-icon" />
     <title>SneakerVibe</title>
   </head>
-  <body>
+  <body onload="getCart('cartList')">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">SneakerVibe</a>
       <button
@@ -51,7 +51,11 @@
         </ul>
       </div>
     </nav>
-    <div></div>
+    <div>
+      <ol id="cartList">
+
+      </ol>
+    </div>
     <footer class="bg-light w-100 py-3">
       <div class="container">
         <div class="row">

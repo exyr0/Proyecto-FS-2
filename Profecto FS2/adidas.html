@@ -14,7 +14,7 @@
     <link href="./assets/img/favicon.ico" rel="icon" type="image/x-icon" />
     <title>SneakerVibe</title>
   </head>
-  <body>
+  <body onload="loadItems()">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">SneakerVibe</a>
       <button
@@ -120,7 +120,7 @@
                 </tbody>
               </table>
               <div class="content">
-                <button class="btn btn-primary" id="btn-carrito">
+                <button class="btn btn-primary" id="btn-carrito" onclick="addProduct('Adidas Campus 00s', 89.990, 1)">
                   Agregar al carrito
                 </button>
               </div>

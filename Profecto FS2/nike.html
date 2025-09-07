@@ -9,7 +9,7 @@
 <link href="./assets/css/style.css" rel="stylesheet">
 <title>SneakerVibe</title>
 </link></head>
-<body>
+<body onload="loadItems()">
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 <a class="navbar-brand" href="#">SneakerVibe</a>
 <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
@@ -98,7 +98,7 @@
 </tbody>
 </table>
 <div class="content">
-<button class="btn btn-primary" id="btn-carrito">
+<button class="btn btn-primary" id="btn-carrito" onclick="addProduct('Nike TN Air Max Plus', 185, 1)">
                   Agregar al carrito
                 </button>
 </div>
