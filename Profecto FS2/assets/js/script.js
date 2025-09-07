@@ -15,7 +15,7 @@ function checkEmail(email) {
   if (atIndex === -1) {
     //Si no hay simbolo '@', ejecutar
     document.getElementById("domainError").innerHTML =
-      "Ingrese un email válido: (@duoc.cl, @profesor.duoc.cl, @gmail.com)";
+      "Ingrese un email válido: <br>(@duoc.cl, @profesor.duoc.cl, @gmail.com)";
     return false;
   }
 
@@ -29,7 +29,7 @@ function checkEmail(email) {
   } else {
     //Si no tiene un dominio valido, ejecutar
     document.getElementById("domainError").innerHTML =
-      "Ingrese un email válido: (@duoc.cl, @profesor.duoc.cl, @gmail.com)";
+      "Ingrese un email válido: <br>(@duoc.cl, @profesor.duoc.cl, @gmail.com)";
     return false;
   }
 }

@@ -65,8 +65,11 @@
     <section id="section-in">
       <div id="div-in">
         <p id="p-in">Inicio de Sesion</p>
-        <input class="inp-in" placeholder="Correo" type="email" />
-        <input class="inp-in" placeholder="Contraseña" type="password" />
+        <input class="inp-in" placeholder="Correo" type="email" id="inp_email" onkeyup="checkEmail(document.getElementById('inp_email').value); checkChar(document.getElementById('inp_email').value, 100, 1, 'emailError', 'Ingrese su correo *obligatorio*', 'Ingrese un correo con menos de 100 caracteres');"/>
+        <p class="text-danger" id="emailError"></p>
+        <p class="text-danger" id="domainError"></p>
+        <input class="inp-in" placeholder="Contraseña" type="password" id="inp_passw" onkeyup="checkChar(document.getElementById('inp_passw').value, 10, 4, 'passwError', 'Ingrese una contraseña de mas de 4 caracteres', 'Ingrese una contraseña con menos de 10 caracteres')"/>
+        <p class="text-danger" id="passwError"></p>
         <button id="btn-in">Iniciar Sesion</button>
       </div>
     </section>
