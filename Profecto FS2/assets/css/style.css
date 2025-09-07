@@ -90,6 +90,10 @@
 #btn-in{
     margin-bottom: 15px;
 }
+
+#btn-re{
+    margin-bottom: 15px;
+}
 .inp-in{
     width: 300px;
     margin-top: 30px;
@@ -293,4 +297,30 @@
 
 #clear-cart:hover {
   background-color: #c82333;
+}
+
+/* ====== NOSOTROS ====== */
+#nosotros-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.nosotros-img {
+  text-align: center;
+}
+
+#valores-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.valores {
+  text-align: center;
+}
+
+.footer-text {
+  text-align: center;
+  margin: 0;
 }

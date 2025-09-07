@@ -52,7 +52,7 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="./carrito.html" id="carrito"
-              >🛒 Carrito</a
+              >🛒 Carrito (<span id="cart-count">0</span>)</a
             >
           </li>
         </ul>
@@ -117,7 +117,11 @@
                 </tbody>
               </table>
               <div class="content">
-                <button class="btn btn-primary" id="btn-carrito" onclick="addProduct('Puma LaFrance', 110.990, 1)">
+                <button
+                  class="btn btn-primary"
+                  id="btn-carrito"
+                  onclick="addProduct('Puma LaFrance', 110.990, 1)"
+                >
                   Agregar al carrito
                 </button>
               </div>

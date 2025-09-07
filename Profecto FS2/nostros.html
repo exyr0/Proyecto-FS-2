@@ -14,7 +14,8 @@
     <link href="./assets/img/favicon.ico" rel="icon" type="image/x-icon" />
     <title>SneakerVibe</title>
   </head>
-  <body>
+</html>
+<body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">SneakerVibe</a>
       <button
@@ -40,7 +41,7 @@
             <a class="nav-link" href="./registrarse.html">Registrarse</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./contacto.html">Contacto</a>
+            <a class="nav-link" href="./ingresar.html">Ingresar</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./blog.html">Blog</a>
@@ -55,25 +56,46 @@
         </ul>
       </div>
     </nav>
-    <div id="cont-img">
-      <img
-        alt=""
-        id="img-ingresar"
-        src="./assets/img/ChatGPT Image 3 sept 2025, 18_45_51.png"
-      />
+    <div class="container mt-5">
+    <h2 id="nosotros-title">Sobre Nosotros</h2>
+    <div class="row align-items-center">
+      
+      <div class="col-md-6">
+        <p>
+          En SneakerVibe creemos que la moda urbana y deportiva es mucho más que ropa: 
+          es un estilo de vida. Nuestro objetivo es ofrecer zapatillas, ropa y accesorios que 
+          representen tu personalidad y te acompañen en cada momento de tu día.
+        </p>
+        <p>
+          Desde nuestros inicios, hemos trabajado con pasión para traer productos de calidad, 
+          inspirados en las últimas tendencias, y siempre con precios justos para nuestra comunidad.
+        </p>
+        <p>
+          Somos un equipo de estudiantes/emprendedores comprometidos en crear una tienda online 
+          que sea cercana, confiable y con estilo.
+        </p>
+      </div>      
     </div>
-    <section id="section-in">
-      <div id="div-in">
-        <p id="p-in">Inicio de Sesion</p>
-        <input class="inp-in" placeholder="Correo" type="email" id="inp_email" onkeyup="checkEmail(document.getElementById('inp_email').value); checkChar(document.getElementById('inp_email').value, 100, 1, 'emailError', 'Ingrese su correo *obligatorio*', 'Ingrese un correo con menos de 100 caracteres');"/>
-        <p class="text-danger" id="emailError"></p>
-        <p class="text-danger" id="domainError"></p>
-        <input class="inp-in" placeholder="Contraseña" type="password" id="inp_passw" onkeyup="checkChar(document.getElementById('inp_passw').value, 10, 4, 'passwError', 'Ingrese una contraseña de mas de 4 caracteres', 'Ingrese una contraseña con menos de 10 caracteres')"/>
-        <p class="text-danger" id="passwError"></p>
-        <a id="btn-re" href="./registrarse.html" class="btn">Registrarse</a>
-        <button id="btn-in">Iniciar Sesion</button>
+  </div>
+
+  <div class="container mt-5">
+    <h3 id="valores-title">Nuestros Valores</h3>
+    <div class="row valores">
+      <div class="col-md-4">
+        <h5>✨ Pasión</h5>
+        <p>Amamos lo que hacemos y queremos transmitir esa pasión en cada producto que ofrecemos.</p>
       </div>
-    </section>
+      <div class="col-md-4">
+        <h5>🤝 Confianza</h5>
+        <p>Buscamos que nuestros clientes se sientan seguros en cada compra.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>🚀 Innovación</h5>
+        <p>Siempre atentos a las últimas tendencias para traer lo mejor en moda urbana.</p>
+      </div>
+    </div>
+  </div>
+
     <footer class="bg-light w-100 py-3">
       <div class="container">
         <div class="row">
