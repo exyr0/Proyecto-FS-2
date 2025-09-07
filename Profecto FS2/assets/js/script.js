@@ -52,7 +52,7 @@ function enviarForm(text, elementId, errorMsg){
 }
 
 const products = [
-    //{name:'airmax', price:189, qty:1}
+    
 ]
 
 function addProduct(name, price, qty) {
@@ -67,6 +67,14 @@ function addProduct(name, price, qty) {
         localStorage.setItem("cart", JSON.stringify(products));//guardar productos en local storage
         console.log("añadido un objeto nuevo:", newItem);
     }
+    const msg = document.getElementById("cart-message");
+msg.textContent = `${name} agregado al carrito 🛒`;
+msg.classList.remove("d-none");
+
+// Ocultar el mensaje después de 2 segundos
+setTimeout(() => {
+    msg.classList.add("d-none");
+}, 2000);
 }
 
 function getCart(elementId) {
@@ -82,6 +90,7 @@ function getCart(elementId) {
     });
     console.log(products)
 }
+
 
 function loadItems(){
     const saved = localStorage.getItem("cart");// get productos guardados

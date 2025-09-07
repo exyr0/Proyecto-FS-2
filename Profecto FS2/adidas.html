@@ -59,6 +59,7 @@
       </div>
     </nav>
     <div class="container-producto mt-5" id="container-producto">
+      <div id="cart-message" class="alert alert-success d-none"></div>
       <div class="row d-flex" id="div-producto">
         <div class="col-md-6 d-flex justify-content-center">
           <img
@@ -120,7 +121,11 @@
                 </tbody>
               </table>
               <div class="content">
-                <button class="btn btn-primary" id="btn-carrito" onclick="addProduct('Adidas Campus 00s', 89.990, 1)">
+                <button
+                  class="btn btn-primary"
+                  id="btn-carrito"
+                  onclick="addProduct('Adidas Campus 00s', 89.990, 1)"
+                >
                   Agregar al carrito
                 </button>
               </div>
