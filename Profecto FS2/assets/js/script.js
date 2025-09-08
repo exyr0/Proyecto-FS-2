@@ -69,7 +69,7 @@ function addProduct(name, price, qty) {
     console.log("añadido objeto existente:", foundItem);
   } else {
     //añadir producto
-    const newItem = { name, price, qty };
+    const newItem = { name, price, qty: 1 };
     products.push(newItem);
     localStorage.setItem("cart", JSON.stringify(products)); //guardar productos en local storage
     console.log("añadido un objeto nuevo:", newItem);
@@ -97,17 +97,27 @@ function updateCartCount() {
 }
 
 function getCart(elementId) {
-  const saved = localStorage.getItem("cart"); // get productos guardados
-  if (saved) products.push(...JSON.parse(saved));
+  const saved = localStorage.getItem("cart"); // productos guardados
+  if (saved) {
+    products.length = 0; // ✅ evita duplicados al recargar
+    products.push(...JSON.parse(saved));
+  }
 
-  document.getElementById(elementId).innerHTML = "";
+  const container = document.getElementById(elementId);
+  container.innerHTML = "";
+
   products.forEach((item) => {
     const li = document.createElement("li");
-    const total = (item.price * item.qty).toFixed(2);
     li.textContent = `${item.name} - $${item.price.toFixed(2)} x ${item.qty}`;
-    document.getElementById(elementId).appendChild(li);
+    container.appendChild(li);
   });
-  console.log(products);
+
+  // ✅ actualizar el total
+  const total = products.reduce((sum, it) => sum + it.price * it.qty, 0);
+  const totalElement = document.getElementById("cart-total");
+  if (totalElement) {
+    totalElement.textContent = "Total: $" + total.toLocaleString();
+  }
 }
 
 function loadItems() {
@@ -118,3 +128,19 @@ window.onload = () => {
   loadItems();
   updateCartCount();
 };
+
+function clearCart() {
+  products.length = 0; // limpiar array
+  localStorage.removeItem("cart"); // eliminar del local storage
+  const container = document.getElementById("cart-items");
+  if (container) container.innerHTML = ""; // limpiar visualmente
+  const totalElement = document.getElementById("cart-total");
+  if (totalElement) totalElement.textContent = "Total: $0.00"; // reset total
+  updateCartCount(); // actualizar contador
+  const msg = document.getElementById("cart-message");
+  msg.textContent = "Carrito vaciado ";
+  msg.classList.remove("d-none"); // mostrar mensaje
+  setTimeout(() => {
+    msg.classList.add("d-none"); // ocultar mensaje despues de 5 segundos
+  }, 5000);
+}
