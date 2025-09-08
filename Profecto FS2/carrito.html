@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,9 +11,9 @@
     />
     <link href="./assets/css/style.css" rel="stylesheet" />
     <link href="./assets/img/favicon.ico" rel="icon" type="image/x-icon" />
-    <title>SneakerVibe</title>
+    <title>SneakerVibe - Carrito</title>
   </head>
-  <body onload="getCart('cartList')">
+  <body onload="getCart('cart-list')">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">SneakerVibe</a>
       <button
@@ -49,24 +48,34 @@
             <a class="nav-link" href="./blog.html">Blog</a>
           </li>
         </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./carrito.html" id="carrito"
+              >🛒 Carrito (<span id="cart-count">0</span>)</a
+            >
+          </li>
+        </ul>
       </div>
     </nav>
-    <div>
+
+    <!-- 🛒 Contenido del carrito -->
+    <div class="container mt-5">
       <div class="cart-container">
         <h2>🛒 Carrito de Compras</h2>
 
-        <!-- Lista de productos -->
-        <ul id="cart-list"></ul>
+        <ul id="cart-list" class="list-group mb-3"></ul>
 
-        <!-- Total y botones -->
         <div class="cart-footer">
-          <p id="cartList">Total: $0</p>
-          <button id="clear-cart">Vaciar carrito</button>
+          <p id="cart-total" class="font-weight-bold">Total: $0</p>
+          <button id="clear-cart" class="btn btn-danger" onclick="clearCart()">
+            Vaciar carrito
+          </button>
         </div>
       </div>
-      <ol id="cartList"></ol>
     </div>
-    <footer class="bg-light w-100 py-3">
+
+    <!-- Footer -->
+    <footer class="bg-light w-100 py-3 mt-5">
       <div class="container">
         <div class="row">
           <!-- Primera columna -->
@@ -93,6 +102,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- Scripts -->
     <script
       crossorigin="anonymous"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
