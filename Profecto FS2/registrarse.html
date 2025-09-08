@@ -1,164 +1,121 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <link
-      crossorigin="anonymous"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      rel="stylesheet"
-    />
-    <link href="./assets/css/style.css" rel="stylesheet" />
-    <link href="./assets/img/favicon.ico" rel="icon" type="image/x-icon" />
-    <title>SneakerVibe</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">SneakerVibe</a>
-      <button
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-        class="navbar-toggler"
-        data-target="#navbarNav"
-        data-toggle="collapse"
-        type="button"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./productos.html">Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./ingresar.html">Ingresar</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contacto.html">Contacto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./blog.html">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./nostros.html">Nosotros</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="./carrito.html" id="carrito"
-              >🛒 Carrito (<span id="cart-count">0</span>)</a
-            >
-          </li>
-        </ul>
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" rel="stylesheet" />
+  <link href="./assets/css/style.css" rel="stylesheet" />
+  <link href="./assets/img/favicon.ico" rel="icon" type="image/x-icon" />
+  <title>SneakerVibe</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="./assets/img/ChatGPT Image 3 sept 2025, 18_45_51.png" id="img-logo" alt="">
+    </a>
+    <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+      data-target="#navbarNav" data-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./productos.html">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./ingresar.html">Ingresar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./blog.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #dc3545;" href="./nostros.html">Nosotros</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./carrito.html" id="carrito">🛒 Carrito (<span id="cart-count">0</span>)</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section id="section-reg">
+    <div id="div-reg">
+      <p id="p-reg">Registrarse</p>
+      <input class="inp-reg" id="inp_name"
+        onkeyup="checkChar(document.getElementById('inp_name').value, 100, 1, 'nameError', 'Ingrese su nombre *obligatorio*', 'Ingrese un nombre con menos de 100 caracteres')"
+        placeholder="Nombre Completo" type="text" />
+      <p class="text-danger" id="nameError"></p>
+      <input class="inp-reg" id="inp_email"
+        onkeyup="checkEmail(document.getElementById('inp_email').value); checkChar(document.getElementById('inp_email').value, 100, 1, 'emailError', 'Ingrese su correo *obligatorio*', 'Ingrese un correo con menos de 100 caracteres');"
+        placeholder="Correo" type="email" />
+      <p class="text-danger" id="emailError"></p>
+      <p class="text-danger" id="domainError"></p>
+      <input class="inp-reg" id="inp_email2"
+        onkeyup="emailConfirm(document.getElementById('inp_email').value, document.getElementById('inp_email2').value, 'confError'); checkChar(document.getElementById('inp_email2').value, 100, 1, 'emailError2', 'Ingrese su correo *obligatorio*', 'Ingrese un correo con menos de 100 caracteres');"
+        placeholder="Confirma Correo" type="email" />
+      <p class="text-danger" id="emailError2"></p>
+      <p class="text-danger" id="confError"></p>
+      <input class="inp-reg" id="inp_passw"
+        onkeyup="checkChar(document.getElementById('inp_passw').value, 10, 4, 'passwError', 'Ingrese una contraseña de mas de 4 caracteres', 'Ingrese una contraseña con menos de 10 caracteres')"
+        placeholder="Contraseña" type="password" />
+      <p class="text-danger" id="passwError"></p>
+      <input class="inp-reg" id="inp_passw2"
+        onkeyup="passwConfirm(document.getElementById('inp_passw').value, document.getElementById('inp_passw2').value, 'passwConfErr'); checkChar(document.getElementById('inp_passw2').value, 10, 4, 'passwError2', 'Ingrese una contraseña de mas de 4 caracteres', 'Ingrese una contraseña con menos de 10 caracteres')"
+        placeholder="Confirma Contraseña" type="password" />
+      <p class="text-danger" id="passwError2"></p>
+      <p class="text-danger" id="passwConfErr"></p>
+      <input class="inp-reg" placeholder="Telefono" type="number" />
+      <div id="select">
+        <select id="region" name="region">
+          <option value="">-Seleccione region</option>
+          <option value="">Metropolitana</option>
+          <option value="">Bio Bio</option>
+          <option value="">Araucania</option>
+        </select>
+        <select id="comuna" name="comuna">
+          <option value="">-Seleccione comuna</option>
+          <option value="">La Florida</option>
+          <option value="">Santiago</option>
+          <option value="">Linares</option>
+        </select>
       </div>
-    </nav>
-    <section id="section-reg">
-      <div id="div-reg">
-        <p id="p-reg">Registrarse</p>
-        <input
-          class="inp-reg"
-          id="inp_name"
-          onkeyup="checkChar(document.getElementById('inp_name').value, 100, 1, 'nameError', 'Ingrese su nombre *obligatorio*', 'Ingrese un nombre con menos de 100 caracteres')"
-          placeholder="Nombre Completo"
-          type="text"
-        />
-        <p class="text-danger" id="nameError"></p>
-        <input
-          class="inp-reg"
-          id="inp_email"
-          onkeyup="checkEmail(document.getElementById('inp_email').value); checkChar(document.getElementById('inp_email').value, 100, 1, 'emailError', 'Ingrese su correo *obligatorio*', 'Ingrese un correo con menos de 100 caracteres');"
-          placeholder="Correo"
-          type="email"
-        />
-        <p class="text-danger" id="emailError"></p>
-        <p class="text-danger" id="domainError"></p>
-        <input
-          class="inp-reg"
-          id="inp_email2"
-          onkeyup="emailConfirm(document.getElementById('inp_email').value, document.getElementById('inp_email2').value, 'confError'); checkChar(document.getElementById('inp_email2').value, 100, 1, 'emailError2', 'Ingrese su correo *obligatorio*', 'Ingrese un correo con menos de 100 caracteres');"
-          placeholder="Confirma Correo"
-          type="email"
-        />
-        <p class="text-danger" id="emailError2"></p>
-        <p class="text-danger" id="confError"></p>
-        <input
-          class="inp-reg"
-          id="inp_passw"
-          onkeyup="checkChar(document.getElementById('inp_passw').value, 10, 4, 'passwError', 'Ingrese una contraseña de mas de 4 caracteres', 'Ingrese una contraseña con menos de 10 caracteres')"
-          placeholder="Contraseña"
-          type="password"
-        />
-        <p class="text-danger" id="passwError"></p>
-        <input
-          class="inp-reg"
-          id="inp_passw2"
-          onkeyup="passwConfirm(document.getElementById('inp_passw').value, document.getElementById('inp_passw2').value, 'passwConfErr'); checkChar(document.getElementById('inp_passw2').value, 10, 4, 'passwError2', 'Ingrese una contraseña de mas de 4 caracteres', 'Ingrese una contraseña con menos de 10 caracteres')"
-          placeholder="Confirma Contraseña"
-          type="password"
-        />
-        <p class="text-danger" id="passwError2"></p>
-        <p class="text-danger" id="passwConfErr"></p>
-        <input class="inp-reg" placeholder="Telefono" type="number" />
-        <div id="select">
-          <select id="region" name="region">
-            <option value="">-Seleccione region</option>
-            <option value="">Metropolitana</option>
-            <option value="">Bio Bio</option>
-            <option value="">Araucania</option>
-          </select>
-          <select id="comuna" name="comuna">
-            <option value="">-Seleccione comuna</option>
-            <option value="">La Florida</option>
-            <option value="">Santiago</option>
-            <option value="">Linares</option>
-          </select>
+      <button id="btn-reg" class="color-bg-pag">Registrarse</button>
+    </div>
+  </section>
+  <footer class="bg-light w-100 py-3">
+    <div class="container">
+      <div class="row">
+        <!-- Primera columna -->
+        <div class="col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start">
+          <p class="mb-1">© 2025</p>
+          <p class="mb-1">📧 Contacto: SneakerVibe@gmail.com</p>
+          <p class="mb-0">📷 Instagram: @SneakerVibe</p>
         </div>
-        <button id="btn-reg">Registrarse</button>
-      </div>
-    </section>
-    <footer class="bg-light w-100 py-3">
-      <div class="container">
-        <div class="row">
-          <!-- Primera columna -->
-          <div
-            class="col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start"
-          >
-            <p class="mb-1">© 2025</p>
-            <p class="mb-1">📧 Contacto: SneakerVibe@gmail.com</p>
-            <p class="mb-0">📷 Instagram: @SneakerVibe</p>
-          </div>
-          <!-- Segunda columna -->
-          <div
-            class="col-md-6 d-flex justify-content-center justify-content-md-end align-items-center"
-          >
-            <form class="form-inline">
-              <input
-                class="form-control mr-2"
-                placeholder="Correo"
-                type="email"
-              />
-              <button class="btn btn-primary" type="submit">Suscribirse</button>
-            </form>
-          </div>
+        <!-- Segunda columna -->
+        <div class="col-md-6 d-flex justify-content-center justify-content-md-end align-items-center">
+          <form class="form-inline">
+            <input class="form-control mr-2" placeholder="Correo" type="email" />
+            <button class="btn btn-primary color-bg-pag"  type="submit">Suscribirse</button>
+          </form>
         </div>
       </div>
-    </footer>
-    <script
-      crossorigin="anonymous"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    ></script>
-    <script
-      crossorigin="anonymous"
-      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-    ></script>
-    <script src="./assets/js/script.js"></script>
-  </body>
+    </div>
+  </footer>
+  <script crossorigin="anonymous" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script crossorigin="anonymous" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
 </html>
