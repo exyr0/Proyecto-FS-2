@@ -18,6 +18,18 @@
 #p-msg{
     margin-top: 15px;
 }
+#img-logo{
+    width: 150px;
+    height: 90px;
+}
+.color-bg-pag{
+    background-color: #dc3545;
+    color: white;
+    border-radius: 5px;
+}
+#div-carrito{
+    height: 500px;
+}
 .inp-reg{
     width: 300px;
     margin-top: 10px;
@@ -54,13 +66,13 @@
     flex-direction: column;
     border-radius: 10px;
     width: 450px;
-    background-color: beige;
+    background-color: lightcoral;
 }
 #div-msg {
     max-width: 500px; 
     margin: 20px auto;
     padding: 20px;
-    background-color: beige;
+    background-color: lightcoral;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     text-align: center;
@@ -93,6 +105,7 @@
 
 #btn-re{
     margin-bottom: 15px;
+    color: #dc3545;
 }
 .inp-in{
     width: 300px;
@@ -132,7 +145,7 @@
     border-radius: 10px;
     width: 600px;
     padding: 10px;
-    background-color: beige;
+    background-color: lightcoral;
 }
 
 .img-producto{
@@ -231,7 +244,7 @@
 .blog-card {
   margin-bottom: 30px;
   padding: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid lightcoral;
   border-radius: 8px;
   background-color: #fff;
 }
