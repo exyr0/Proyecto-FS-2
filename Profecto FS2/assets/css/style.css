@@ -337,3 +337,15 @@
   text-align: center;
   margin: 0;
 }
+
+#altura{
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#altura-sec{
+    height: 200px;
+}
