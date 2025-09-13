@@ -124,10 +124,12 @@ function loadItems() {
   const saved = localStorage.getItem("cart"); // get productos guardados
   if (saved) products.push(...JSON.parse(saved));
 }
-window.onload = () => {
+document.addEventListener("DOMContentLoaded", () => {
   loadItems();
   updateCartCount();
-};
+  const list = document.getElementById("cart-list");
+  if (list) getCart("cart-list");
+});
 
 function clearCart() {
   products.length = 0; // limpiar array
