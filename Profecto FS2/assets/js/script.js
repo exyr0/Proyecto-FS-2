@@ -132,17 +132,24 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function clearCart() {
-  products.length = 0; // limpiar array
-  localStorage.removeItem("cart"); // eliminar del local storage
-  const container = document.getElementById("cart-items");
-  if (container) container.innerHTML = ""; // limpiar visualmente
+  // Vaciar estado y storage
+  products.length = 0;
+  localStorage.removeItem("cart");
+
+  // Limpiar la vista correcta
+  const container = document.getElementById("cart-list"); // <- antes: "cart-items"
+  if (container) container.innerHTML = "";
+
+  // Actualizar contador y total
+  updateCartCount();
   const totalElement = document.getElementById("cart-total");
-  if (totalElement) totalElement.textContent = "Total: $0.00"; // reset total
-  updateCartCount(); // actualizar contador
+  if (totalElement) totalElement.textContent = "Total: $0";
+
+  // Mensaje (solo si existe en esta página)
   const msg = document.getElementById("cart-message");
-  msg.textContent = "Carrito vaciado ";
-  msg.classList.remove("d-none"); // mostrar mensaje
-  setTimeout(() => {
-    msg.classList.add("d-none"); // ocultar mensaje despues de 5 segundos
-  }, 5000);
+  if (msg) {
+    msg.textContent = "Carrito vaciado";
+    msg.classList.remove("d-none");
+    setTimeout(() => msg.classList.add("d-none"), 5000);
+  }
 }
